@@ -413,7 +413,7 @@ def seek_queue_many_device(ids, hashes, outdir, blacklist, hashes_diff, devices,
 
     seen_images = []
     outdir_tmp = outdir + '.tmp' + '.' + str(settings.distributed_machine) + '.' + str(devices.index(device))
-    print outdir_tmp
+    print (outdir_tmp)
     # Fetch the data from the pipeline and put it where it belongs (into your model)
     for _ in range(devices.index(device), len_hashes - 1 - len(blacklist), num_devices):
         # Computing diff
